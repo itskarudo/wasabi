@@ -1,0 +1,6 @@
+[submodule "awesome/.config/awesome/misc/battery-widget"]
+	path = awesome/.config/awesome/misc/battery-widget
+	url = https://github.com/Aire-One/awesome-battery_widget
+[submodule "awesome/.config/awesome/misc/bling"]
+	path = awesome/.config/awesome/misc/bling
+	url = https://github.com/BlingCorp/bling.git
