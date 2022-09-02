@@ -12,6 +12,10 @@ require('packer').startup {
     use 'wbthomason/packer.nvim'
 
     use 'christoomey/vim-tmux-navigator'
+    use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+    })
 
     -- In Buffer ( Auto )
     use { 
