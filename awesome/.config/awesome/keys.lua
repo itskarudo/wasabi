@@ -39,6 +39,7 @@ keys.globalkeys = gears.table.join(
   awful.key({mod}, 'space', function() awful.util.spawn('rofi -show drun') end),
   awful.key({mod}, 'b', function() awful.util.spawn('firefox') end),
   awful.key({mod}, 'e', function() awful.util.spawn('kitty -e ranger') end),
+  awful.key({mod}, ';', function() awful.util.spawn('rofi -modi emoji -show emoji') end),
 
   -- Screenshots
   awful.key({}, 'Print', function() awful.util.spawn('flameshot gui') end)
