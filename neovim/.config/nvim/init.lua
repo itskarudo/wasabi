@@ -26,3 +26,8 @@ api.nvim_create_autocmd("TermOpen", {
   pattern = "term://*",
   command = "setlocal nonumber norelativenumber signcolumn=no | setfiletype terminal",
 })
+
+api.nvim_create_autocmd("BufRead,BufNewFile", {
+  pattern = "*.asm",
+  command = "set ft=nasm"
+})

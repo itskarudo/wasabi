@@ -13,6 +13,9 @@ require('packer').startup {
 
     use 'christoomey/vim-tmux-navigator'
     use({
+      'lervag/vimtex',
+    })
+    use({
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
     })
@@ -110,3 +113,4 @@ require('packer').startup {
     },
   },
 }
+vim.g["vimtex_view_method"] = "zathura"
