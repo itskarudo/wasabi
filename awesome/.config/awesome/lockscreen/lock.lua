@@ -61,7 +61,7 @@ local profile_image = wibox.widget {
 local username = wibox.widget{
     widget = wibox.widget.textbox,
     markup = "karudo",
-    font = beautiful.font,
+    font = beautiful.barfont,
     align = "center",
     valign = "center"
 }
@@ -91,14 +91,14 @@ local icon = wibox.widget{
 local clock = wibox.widget{
     vertical_pad(dpi(40)),
     {
-        font = beautiful.font,
+        font = beautiful.barfont,
         format = colorize_text("%I:%M", beautiful.fg_normal),
         widget = wibox.widget.textclock,
         align = "center",
         valign = "center"
     },
     {
-        font = beautiful.font,
+        font = beautiful.barfont,
         format = colorize_text("%A, %B", beautiful.fg_normal),
         widget = wibox.widget.textclock,
         align = "center",
