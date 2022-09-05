@@ -48,6 +48,7 @@ keys.globalkeys = gears.table.join(
 -- Keyboard Control
 keys.clientkeys = gears.table.join(
   awful.key({mod}, 'w', function(c) c:kill() end),
+  awful.key({mod}, 'f', function(c) c.fullscreen = not c.fullscreen; c:raise() end),
   awful.key({mod}, 'Tab', function() awful.client.floating.toggle() end)
 )
 
