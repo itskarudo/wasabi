@@ -106,13 +106,13 @@ awesome.connect_signal("signal::volume", function(value, muted)
 	if first_V then
 		first_V = false
 	else
-		icon.markup = "<span foreground='" .. beautiful.pri .. "'></span>"
+		icon.markup = "<span foreground='" .. beautiful.pri .. "'></span>"
 		bar.value = value
 
 		if muted or value == 0  then
 			bar.handle_color = beautiful.err
 			bar.bar_active_color = beautiful.err
-			icon.markup = "<span foreground='" .. beautiful.err .. "'></span>"
+			icon.markup = "<span foreground='" .. beautiful.err .. "'></span>"
 		else
 			bar.handle_color = beautiful.pri
 			bar.bar_active_color = beautiful.pri
@@ -129,7 +129,7 @@ awesome.connect_signal("signal::brightness", function(value)
 	if first_B then
 		first_B = false
 	else
-		icon.markup = "<span foreground='" .. beautiful.pri .. "'></span>"
+		icon.markup = "<span foreground='" .. beautiful.pri .. "'></span>"
 		bar.handle_color = beautiful.pri
 		bar.bar_active_color = beautiful.pri
 		bar.value = value
