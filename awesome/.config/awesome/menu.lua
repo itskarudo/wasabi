@@ -9,9 +9,9 @@ local main = awful.menu {
       "Awesome",
       menu,
     },
-    { "Terminal", "kitty" },
+    { "Terminal", "wezterm" },
     { "Browser", "firefox" },
-    { "Files", "kitty -e ranger" },
+    { "Files", "wezterm start -- ranger" },
     { "Editor", "mousepad" },
   }
 }

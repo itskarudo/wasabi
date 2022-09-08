@@ -10,14 +10,14 @@
 ## Setup
 - Install the dependencies
 ```
-awesome-git firefox kitty mpv neofetch neovim rofi tmux zathura stow redshift nitrogen pulseaudio alsa-plugins-pulseaudio flameshot brightnessctl NetworkManager
+awesome-git firefox wezterm mpv neofetch neovim rofi tmux zathura stow redshift nitrogen pulseaudio alsa-plugins-pulseaudio flameshot brightnessctl NetworkManager
 ```
 
 - Link the dotfiles
 ```sh
 $ git clone https://github.com/itskarudo/wasabi --recurse-submodules
 $ cd wasabi
-$ stow awesome bash kitty mpv neofetch neovim rofi scripts tmux zathura
+$ stow awesome bash wezterm mpv neofetch neovim rofi scripts tmux zathura
 ```
 
 - Enable the firefox theme (optional)
