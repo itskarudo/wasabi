@@ -243,12 +243,12 @@ local function grab_password()
         keypressed_callback  = function(mod, key, cmd)
             if #key == 1 then
                 characters_entered = characters_entered + 1
-                promptbox.markup = colorize_text(string.rep("", characters_entered), beautiful.fg_normal)
+                promptbox.markup = colorize_text(string.rep("*", characters_entered), beautiful.fg_normal)
             elseif key == "BackSpace" then
                 if characters_entered > 0 then
                     characters_entered = characters_entered - 1
                 end
-                promptbox.markup = colorize_text(string.rep("", characters_entered), beautiful.fg_normal)
+                promptbox.markup = colorize_text(string.rep("*", characters_entered), beautiful.fg_normal)
             end
 
         end,
