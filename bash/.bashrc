@@ -36,9 +36,7 @@ alias src="source ~/.bashrc"
 
 alias esi_alger="proxychains ssh root@esi_alger"
 
-GREEN="\[$(tput setaf 2)\]"
-RESET="\[$(tput sgr0)\]"
-PS1="${GREEN}\W${RESET} # "
+PS1="\[\e[0;32m\]\W\[\e(B\e[m\] # "
 
 
 export NVM_DIR="$HOME/.nvm"
