@@ -10,7 +10,7 @@
 ## Setup
 - Install the dependencies
 ```
-awesome-git firefox wezterm mpv neofetch neovim rofi tmux zathura stow redshift nitrogen pulseaudio alsa-plugins-pulseaudio flameshot brightnessctl NetworkManager
+awesome-git picom-git firefox wezterm mpv neofetch neovim rofi tmux zathura stow redshift nitrogen pulseaudio alsa-plugins-pulseaudio flameshot brightnessctl NetworkManager
 ```
 
 - Link the dotfiles

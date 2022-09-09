@@ -44,6 +44,7 @@ awful.screen.connect_for_each_screen(function(s)
 end)
 
 -- Autostart
+awful.spawn.with_shell('picom')
 awful.spawn.with_shell('nitrogen --restore')
 awful.spawn("setxkbmap -option caps:ctrl_modifier")
 awful.spawn("setxkbmap -layout us,ar -option grp:alt_shift_toggle")
