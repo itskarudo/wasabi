@@ -25,9 +25,9 @@ alias nf="neofetch"
 alias pf="pfetch"
 alias uwu="uwufetch"
 
-alias xs="sudo xbps-install"
-alias xsr="xbps-query -R -s"
-alias xr="sudo xbps-remove"
+alias pac="sudo pacman"
+alias psr="pacman -Ss"
+alias ysr="yay -Ss"
 alias gic="git clone"
 
 alias vconf="nvim ~/.config/nvim/init.lua"
