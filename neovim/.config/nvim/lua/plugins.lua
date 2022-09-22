@@ -19,6 +19,7 @@ require('packer').startup {
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
     })
+    use 'rhysd/vim-clang-format'
 
     -- In Buffer ( Auto )
     use { 

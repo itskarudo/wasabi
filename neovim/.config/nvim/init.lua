@@ -31,3 +31,8 @@ api.nvim_create_autocmd("BufRead,BufNewFile", {
   pattern = "*.asm",
   command = "set ft=nasm"
 })
+
+api.nvim_create_autocmd("BufRead,BufNewFile", {
+  pattern = {"*.c", "*.h", "*.cpp", "*.cc", "*.hpp"},
+  command = "ClangFormatAutoEnable"
+})
