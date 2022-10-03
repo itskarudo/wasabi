@@ -77,7 +77,6 @@ cmp.setup({
         -- path = "[Path]",
         -- nvim_lsp = "[Lsp]",
         -- luasnip = "[Snip]",
-        -- cmdline = "[Cmd]",
         -- nvim_lua = "[Lua]",
       })[entry.source.name]
       return vim_item
@@ -87,7 +86,6 @@ cmp.setup({
     { name = 'luasnip' },
     { name = 'path' },
     { name = 'buffer' },
-    { name = 'cmdline' },
     { name = 'nvim_lsp' },
   }),
   enabled = function()
@@ -99,20 +97,4 @@ cmp.setup({
         and not context.in_syntax_group('Comment')
     end
   end
-})
-
-cmp.setup.cmdline('/', {
-  mapping = cmp.mapping.preset.cmdline(),
-  sources = {
-    { name = 'buffer' }
-  }
-})
-
-cmp.setup.cmdline(':', {
-  mapping = cmp.mapping.preset.cmdline(),
-  sources = cmp.config.sources({
-    { name = 'path' }
-  }, {
-    { name = 'cmdline' }
-  })
 })

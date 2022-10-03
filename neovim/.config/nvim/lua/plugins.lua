@@ -74,7 +74,7 @@ require('packer').startup {
     }
     use {
       'hrsh7th/nvim-cmp',
-      requires = { 'hrsh7th/cmp-buffer', 'hrsh7th/cmp-path', 'hrsh7th/cmp-cmdline'},
+      requires = { 'hrsh7th/cmp-buffer', 'hrsh7th/cmp-path'},
       config = function()
         require('plugins.cmp')
       end,
