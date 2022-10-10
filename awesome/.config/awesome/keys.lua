@@ -38,7 +38,7 @@ keys.globalkeys = gears.table.join(
   awful.key({mod}, 'Return', function() awful.util.spawn('wezterm') end),
   awful.key({mod}, 'space', function() awful.util.spawn('rofi -show drun') end),
   awful.key({mod}, 'b', function() awful.util.spawn('firefox') end),
-  awful.key({mod}, 'e', function() awful.util.spawn('wezterm start -- ranger') end),
+  awful.key({mod}, 'e', function() awful.util.spawn('nemo') end),
   awful.key({mod}, ';', function() awful.util.spawn('rofi -modi emoji -show emoji') end),
 
   -- Screenshots

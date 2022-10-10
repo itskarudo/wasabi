@@ -11,7 +11,7 @@ local main = awful.menu {
     },
     { "Terminal", "wezterm" },
     { "Browser", "firefox" },
-    { "Files", "wezterm start -- ranger" },
+    { "Files", "nemo" },
     { "Editor", "mousepad" },
   }
 }
