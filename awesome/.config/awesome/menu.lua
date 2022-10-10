@@ -1,6 +1,8 @@
 local menu = {
   { "Refresh", awesome.restart },
   { "Logout", function() awesome.quit() end },
+  { "Reboot", function() awful.spawn.with_shell("reboot") end},
+  { "Shutdown", function() awful.spawn.with_shell("shutdown now") end},
 }
 
 local main = awful.menu {
