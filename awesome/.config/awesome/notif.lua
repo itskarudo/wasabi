@@ -82,7 +82,7 @@ naughty.connect_signal("request::display", function(n)
                 id = "text_role",
                 align = "center",
                 valign = "center",
-                font = beautiful.font,
+                font = beautiful.font .. '10',
                 widget = wibox.widget.textbox
             },
             left = dpi(6),
@@ -128,7 +128,7 @@ naughty.connect_signal("request::display", function(n)
         {
             {
                 markup      = n.title,
-                font        = beautiful.font,
+                font        = beautiful.font .. '10',
                 align       = "left",
                 valign      = "center",
                 widget      = wibox.widget.textbox
@@ -147,7 +147,7 @@ naughty.connect_signal("request::display", function(n)
         {
             {
                 markup      = "<span weight='normal'>" .. n.message .. "</span>",
-                font        = beautiful.font,
+                font        = beautiful.font .. '10',
                 align       = "left",
                 valign      = "center",
                 wrap        = "char",
@@ -164,7 +164,7 @@ naughty.connect_signal("request::display", function(n)
     -- app name
     local app_name_n = wibox.widget{
             markup      = n.app_name,
-            font        = beautiful.font,
+            font        = beautiful.font .. '10',
             align       = "left",
             valign      = "center",
             widget      = wibox.widget.textbox
@@ -173,7 +173,7 @@ naughty.connect_signal("request::display", function(n)
     local time_n = wibox.widget{
         {
             markup      = "now",
-            font        = beautiful.font,
+            font        = beautiful.font .. '10',
             align       = "right",
             valign      = "center",
             widget      = wibox.widget.textbox

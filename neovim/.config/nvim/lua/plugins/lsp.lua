@@ -29,6 +29,7 @@ local servers = {
   "clangd",
   "cmake",
   "tsserver",
+  "rust_analyzer"
 }
 
 for _, a in ipairs(servers) do

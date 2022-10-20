@@ -75,3 +75,5 @@ local built_ins = {
 for _, plugin in pairs(built_ins) do
   g["loaded_" .. plugin] = 1
 end
+
+_G.theme = "gruvbox"

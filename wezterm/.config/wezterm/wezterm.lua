@@ -3,14 +3,14 @@ local wezterm = require("wezterm")
 return {
   -- https://wezfurlong.org/wezterm/config/lua/config/term.html
   term = "wezterm",
-  color_scheme = "Paradise",
+  color_scheme = "Gruvbox Dark",
 
   enable_tab_bar = false,
   default_cursor_style = "SteadyBar",
   force_reverse_video_cursor = true,
 
-  font = wezterm.font("JetBrainsMono Nerd Font"),
-  font_size = 10.3,
+  font = wezterm.font("CaskaydiaCove Nerd Font"),
+  font_size = 10,
 
   window_padding = {
     left = 15,

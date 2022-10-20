@@ -3,24 +3,25 @@ local gfs = require("gears.filesystem")
 local theme_path = gfs.get_configuration_dir() .. "/theme/"
 local images_path = gfs.get_configuration_dir() .. "/images/"
 
-theme.font = 'JetBrainsMono Nerd Font 10'
-theme.barfont = 'JetBrainsMono Nerd Font 12'
+local scheme = require("theme.gruvbox")
+
+theme.font = 'FantasqueSansMono Nerd Font Mono '
 theme.icofont = 'Material 14'
 
-theme.ok = "#8C977D"
-theme.err = "#B66467"
-theme.pri = "#8DA3B9"
+theme.ok = scheme.ok
+theme.err = scheme.err
+theme.pri = scheme.pri
 
 theme.music = theme_path..'close.svg'
 
-theme.fg_normal = "#424242"
-theme.fg_focus= "#E8e3e3"
-theme.fg_minimize = "#424242"
+theme.fg_normal = scheme.fg_normal
+theme.fg_focus= scheme.fg_focus
+theme.fg_minimize = scheme.fg_minimize
 
-theme.bg_normal = "#121212"
-theme.bg_focus= "#101010"
-theme.bg_urgent = "#101010"
-theme.bg_minimize = "#181818"
+theme.bg_normal = scheme.bg_normal
+theme.bg_focus= scheme.bg_focus
+theme.bg_urgent = scheme.bg_urgent
+theme.bg_minimize = scheme.bg_minimize
 
 theme.useless_gap = dpi(5)
 theme.snap_bg = theme.fg_focus
@@ -33,15 +34,15 @@ theme.titlebar_fg_normal = theme.fg_normal
 theme.titlebar_fg_focus = theme.fg_focus
 theme.titlebar_bg = theme.bg_normal
 theme.titlebar_bg_normal = theme.bg_normal
-theme.titlebar_font = theme.font
+theme.titlebar_font = theme.font .. '10'
 
 theme.taglist_bg = theme.bg_normal
 theme.taglist_bg_focus = theme.bg_focus
-theme.taglist_font = theme.barfont
+theme.taglist_font = theme.font .. '14'
 
 theme.menu_bg_normal = theme.bg_normal
 theme.menu_bg_focus = theme.bg_minimize
-theme.menu_font = theme.font
+theme.menu_font = theme.font .. '10'
 theme.menu_border_color = theme.bg_normal
 theme.menu_height = dpi(30)
 theme.menu_width  = dpi(130)

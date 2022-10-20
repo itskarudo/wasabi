@@ -11,40 +11,81 @@ set recolor-keephue true
 map <C-Tab> toggle_statusbar
 set guioptions ""
 
-set completion-bg "#151515"
-set completion-fg "#424242"
-set completion-group-bg "#151515"
-set completion-group-fg "#424242"
-set completion-highlight-bg "#424242"
-set completion-highlight-fg "#e8e3e3"
+set notification-error-bg       "#1d2021" # bg
+set notification-error-fg       "#fb4934" # bright:red
+set notification-warning-bg     "#1d2021" # bg
+set notification-warning-fg     "#fabd2f" # bright:yellow
+set notification-bg             "#1d2021" # bg
+set notification-fg             "#b8bb26" # bright:green
 
-set default-bg "#151515"
-set default-fg "#e8e3e3"
+set completion-bg               "#504945" # bg2
+set completion-fg               "#ebdbb2" # fg
+set completion-group-bg         "#3c3836" # bg1
+set completion-group-fg         "#928374" # gray
+set completion-highlight-bg     "#83a598" # bright:blue
+set completion-highlight-fg     "#504945" # bg2
 
-set highlight-active-color "#A988B0"
-set highlight-color "#D9BC8C" 
+# Define the color in index mode
+set index-bg                    "#504945" # bg2
+set index-fg                    "#ebdbb2" # fg
+set index-active-bg             "#83a598" # bright:blue
+set index-active-fg             "#504945" # bg2
 
-set index-active-bg "#424242"
-set index-active-fg "#e8e3e3"
-set index-bg "#151515"
-set index-fg "#e8e3e3"
+set inputbar-bg                 "#1d2021" # bg
+set inputbar-fg                 "#ebdbb2" # fg
 
-set inputbar-bg "#151515"
-set inputbar-fg "#e8e3e3"
+set statusbar-bg                "#504945" # bg2
+set statusbar-fg                "#ebdbb2" # fg
 
-set notification-bg "#151515"
-set notification-error-bg "#B66467"
-set notification-error-fg "#e8e3e3"
-set notification-fg "#e8e3e3"
-set notification-warning-bg "#D9BC8C" 
-set notification-warning-fg "#424242"
+set highlight-color             "#fabd2f" # bright:yellow
+set highlight-active-color      "#fe8019" # bright:orange
 
-set recolor-darkcolor "#e8e3e3"
-set recolor-lightcolor "#151515"
+set default-bg                  "#1d2021" # bg
+set default-fg                  "#ebdbb2" # fg
+set render-loading              true
+set render-loading-bg           "#1d2021" # bg
+set render-loading-fg           "#ebdbb2" # fg
 
-set render-loading true
-set render-loading-bg "#e8e3e3"
-set render-loading-fg "#151515"
+# Recolor book content's color
+set recolor-lightcolor          "#1d2021" # bg
+set recolor-darkcolor           "#ebdbb2" # fg
+set recolor                     "true"
+# set recolor-keephue             true      # keep original color
 
-set statusbar-bg "#151515"
-set statusbar-fg "#e8e3e3"
+# set completion-bg "#151515"
+# set completion-fg "#424242"
+# set completion-group-bg "#151515"
+# set completion-group-fg "#424242"
+# set completion-highlight-bg "#424242"
+# set completion-highlight-fg "#e8e3e3"
+# 
+# set default-bg "#151515"
+# set default-fg "#e8e3e3"
+# 
+# set highlight-active-color "#A988B0"
+# set highlight-color "#D9BC8C" 
+# 
+# set index-active-bg "#424242"
+# set index-active-fg "#e8e3e3"
+# set index-bg "#151515"
+# set index-fg "#e8e3e3"
+# 
+# set inputbar-bg "#151515"
+# set inputbar-fg "#e8e3e3"
+# 
+# set notification-bg "#151515"
+# set notification-error-bg "#B66467"
+# set notification-error-fg "#e8e3e3"
+# set notification-fg "#e8e3e3"
+# set notification-warning-bg "#D9BC8C" 
+# set notification-warning-fg "#424242"
+# 
+# set recolor-darkcolor "#e8e3e3"
+# set recolor-lightcolor "#151515"
+# 
+# set render-loading true
+# set render-loading-bg "#e8e3e3"
+# set render-loading-fg "#151515"
+# 
+# set statusbar-bg "#151515"
+# set statusbar-fg "#e8e3e3"
