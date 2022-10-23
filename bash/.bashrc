@@ -46,3 +46,5 @@ export NVM_DIR="$HOME/.nvm"
 ~/.config/scripts/bunny
 . "$HOME/.cargo/env"
 export PATH=$PATH:/home/karudo/.spicetify
+
+[ -f "/home/karudo/.ghcup/env" ] && source "/home/karudo/.ghcup/env" # ghcup-env
