@@ -1,0 +1,73 @@
+{
+  "layer": "top",
+    "modules-left": ["custom/arch", "wlr/workspaces"],
+    "modules-center": ["mpris"],
+    "modules-right": ["tray", "custom/cycle_wall", "custom/gamma", "backlight", "pulseaudio", "bluetooth", "network", "battery", "clock"],
+    "custom/arch": {
+      "format": "  ",
+      "tooltip": false,
+      "on-click": "sh $HOME/.config/rofi/bin/powermenu",
+      "interval": 5
+    },
+    "wlr/workspaces": {
+      "format": "{name}",
+      "format": "{icon}",
+      "tooltip": false,
+      "all-outputs": true,
+      "format-icons": {
+        "active": "",
+        "default": ""
+      }
+    },
+    "clock": {
+      "format": "<span color='#cacaca'> </span>{:%H:%M}",
+    },
+    "backlight": {
+      "device": "intel_backlight",
+      "format": "<span color='#cacaca'>{icon}</span> {percent}%",
+      "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "pulseaudio": {
+      "format": "<span color='#cacaca'>{icon}</span> {volume}%",
+      "format-muted": "󰝟 Muted",
+      "tooltip": false,
+      "format-icons": {
+        "headphone": "",
+        "default": ["", "", "󰕾", "󰕾", "󰕾", "", "", ""]
+      },
+      "scroll-step": 1,
+    },
+    "bluetooth": {
+      "format": "<span color='#cacaca'></span>",
+      "format-disabled": "",
+      "format-connected": "<span color='#cacaca'></span>",
+      "tooltip-format": "{device_enumerate}",
+      "tooltip-format-enumerate-connected": "{device_alias}   {device_address}"
+    },
+    "network": {
+      "interface": "wlp0s20f3",
+      "format": "{ifname}",
+      "format-wifi": "<span color='#cacaca'> </span>",
+      "format-ethernet": "{ipaddr}/{cidr} ",
+      "format-disconnected": "<span color='#cacaca'>󰖪</span>",
+      "tooltip": false,
+    },
+    "battery": {
+      "format": "<span color='#cacaca'>{icon}</span> {capacity}%",
+      "format-icons": ["", "", "", "", "", "", "", "", "", ""],
+      "format-charging": "<span color='#cacaca'></span> {capacity}%",
+      "tooltip": false,
+    },
+    "custom/cycle_wall": {
+      "format": "󰸉",
+      "on-click": "~/.config/scripts/cycle.sh"
+    },
+    "custom/gamma": {
+      "format": "󰌵",
+      "on-click": "~/.config/scripts/gamma.sh"
+    },
+    "tray": {
+      "spacing": 15,
+      "icon-size": 15
+    }
+}
