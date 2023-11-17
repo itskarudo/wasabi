@@ -8,9 +8,9 @@
 
 export PATH="/home/karudo/.local/bin:/home/karudo/.yarn/bin:$PATH"
 
-alias ls="ls --color"
-alias ll="ls -lh"
-alias la="ls -lha"
+alias ls="lsd"
+alias ll="lsd -lh"
+alias la="lsd -lha"
 # alias py="python"
 alias py="ipython"
 alias cat="bat"
@@ -23,6 +23,7 @@ alias won="nmcli radio wifi on"
 alias r="ranger"
 alias v="nvim"
 alias t="tmux"
+alias se="sudoedit"
 
 alias nf="neofetch"
 alias pf="pfetch"
@@ -38,16 +39,21 @@ alias vconf="nvim ~/.config/nvim/init.lua"
 alias bconf="nvim ~/.bashrc"
 alias src="source ~/.bashrc"
 
-# PS1="\[\e[0;32m\]\W\[\e(B\e[m\] # "
-PS1="\W \$ "
+PS1="\[\e[0;32m\]\W\[\e(B\e[m\] # "
+# PS1="\W \$ "
 
 export GOPATH="/home/karudo/.go"
 export BAT_THEME=base16
 
 ~/.config/scripts/bunny.sh
 
+export BUN_INSTALL="/home/karudo/.bun"
+
 export PATH=$PATH:/home/karudo/.spicetify
 export PATH=$PATH:/home/karudo/.local/share/flutter/bin
 export PATH=$PATH:/home/karudo/.local/share/gem/ruby/3.0.0/bin
 export PATH=$PATH:/home/karudo/.go/bin
 export PATH=$PATH:/home/karudo/.depot_tools
+export PATH=$PATH:$BUN_INSTALL/bin
+
+export PATH="$PATH:/home/karudo/.foundry/bin"
