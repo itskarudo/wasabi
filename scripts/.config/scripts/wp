@@ -1,0 +1,11 @@
+#!/bin/bash
+
+WP_DIR="/home/karudo/Pictures/Wallpapers/"
+
+cd "$WP_DIR" || exit 1
+set -- * 
+length=$#
+random_num=$((( RANDOM % (length) ) + 1)) 
+
+gsettings set org.gnome.desktop.background picture-uri "file://$WP_DIR/${!random_num}"
+
